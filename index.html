@@ -4,364 +4,436 @@
   <meta charset="UTF-8">
   <title>Sanyam Jain | Resume & Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanyam Jain Resume & Portfolio - Web3, Fullstack, AI, Competitive Programming, IIT BHU">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo"><a href="#">Sanyam Jain</a></div>
-      <div class="nav-menu" id="nav-menu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <div class="nav-logo"><a href="#" aria-label="Home">Sanyam Jain</a></div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#about" class="nav-link" aria-label="About">About</a>
+          <a href="#skills" class="nav-link" aria-label="Skills">Skills</a>
+          <a href="#projects" class="nav-link" aria-label="Projects">Projects</a>
+          <a href="#achievements" class="nav-link" aria-label="Achievements">Achievements</a>
+          <a href="#contact" class="nav-link" aria-label="Contact">Contact</a>
+          <a href="resume.pdf" class="resume-btn" target="_blank" aria-label="Download Resume PDF">Download Resume</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div>
-          <h1 class="hero-title">Hi, I'm Sanyam Jain</span></h1>
-          <h2 class="hero-subtitle">Web3 & Fullstack, AI Integration | Competitive Programming</h2>
-          <p class="hero-description">
-            IIT (BHU) student passionate about building scalable applications—Web3, AI, and dynamic web platforms. Currently pursuing IDD in Mathematical Sciences (CPI 9.40), with upcoming internship at Goldman Sachs. I engineer blockchain solutions, advanced web platforms, and agentic AI workflows. Competitive programming expert (Codeforces/CodeChef/AtCoder). Open for collaboration!
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">Projects</a>
-            <a href="https://www.linkedin.com/in/sanyam-jain-b7965b25a/" class="btn btn-secondary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/Sanyamjain2105" class="btn btn-secondary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div>
+            <h1 class="hero-title" tabindex="0">Hi, I'm Sanyam Jain</h1>
+            <h2 class="hero-subtitle">Web3 & Fullstack, AI Integration | Competitive Programming</h2>
+            <p class="hero-description">
+              IIT (BHU) student passionate about building scalable applications—Web3, AI, and dynamic web platforms. Currently pursuing IDD in Mathematical Sciences (CPI 9.40), with upcoming internship at Goldman Sachs. I engineer blockchain solutions, advanced web platforms, and agentic AI workflows. Competitive programming expert (Codeforces/CodeChef/AtCoder). Open for collaboration!
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary" aria-label="View Projects">Projects</a>
+              <a href="https://www.linkedin.com/in/sanyam-jain-b7965b25a/" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+              <a href="https://github.com/Sanyamjain2105" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            </div>
+            <div class="social-links" aria-label="Social Profiles">
+              <a href="https://codeforces.com/profile/buri_buri_zaemon21" target="_blank" rel="noopener" title="Codeforces" aria-label="Codeforces"><i class="fa fa-code" aria-hidden="true"></i></a>
+              <a href="https://www.codechef.com/users/sanyamjain353" target="_blank" rel="noopener" title="CodeChef" aria-label="CodeChef"><i class="fa fa-cutlery" aria-hidden="true"></i></a>
+            </div>
           </div>
-          <div class="social-links">
-            <a href="https://codeforces.com/profile/buri_buri_zaemon21" target="_blank" title="Codeforces"><i class="fa fa-code"></i></a>
-            <a href="https://www.codechef.com/users/sanyamjain353" target="_blank" title="CodeChef"><i class="fa fa-cutlery"></i></a>
+          <div class="hero-image">
+            <!-- Replace with your real photo or SVG illustration for best results -->
+            <img src="https://avatars.githubusercontent.com/u/10644041?v=4" alt="Sanyam Jain Profile Photo" class="profile-photo" style="width:220px;height:220px;border-radius:50%;box-shadow:0 4px 24px rgba(0,0,0,0.12);border:4px solid #fff;object-fit:cover;" />
           </div>
-        </div>
-        <div class="hero-image">
-          <div class="image-placeholder"><i class="fa fa-user-circle"></i></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="section-header">
-        <h2>About Me</h2>
-        <p>
-          IIT BHU student specializing in Blockchain, Web3, AI, and full-stack software. Active coder, researcher, and event organizer (Goldman Sachs intern 2026). 
-        </p>
-      </div>
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Education</h3>
+    <section id="about" class="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
           <p>
-            <b>IIT (BHU), Varanasi:</b> IDD Mathematical Sciences, CPI 9.40<br>
-            <b>The Modern School, Lucknow:</b> CISCE (XII) 92.4%, CISCE (X) 97.2%
+            IIT BHU student specializing in Blockchain, Web3, AI, and full-stack software. 
           </p>
-          <div class="education-timeline">
-            <h4>Timeline</h4>
-            <div class="timeline-item">
-              <span class="timeline-marker"></span>
-              <div class="timeline-content">
-                <h5>IIT (BHU), Varanasi</h5>
-                <p>Mathematical Sciences, IDD (2022-2027)</p>
-                <span class="timeline-date">CPI: 9.40</span>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-marker"></span>
-              <div class="timeline-content">
-                <h5>The Modern School, Lucknow</h5>
-                <p>CISCE (X) 97.2%, (XII) 92.4%</p>
-                <span class="timeline-date">2019, 2021</span>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="about-stats">
-          <div class="stat-item">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Featured Projects</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">2004</span>
-            <span class="stat-label">Max Contest Rating</span>
-          </div>
+        <div class="about-content">
+          <section class="about-text" aria-label="Education">
+            <h3>Education</h3>
+            <p>
+              <b>IIT (BHU), Varanasi:</b> IDD Mathematical Sciences, CPI 9.40<br>
+              <b>The Modern School, Lucknow:</b> CISCE (XII) 92.4%, CISCE (X) 97.2%
+            </p>
+            <div class="education-timeline" aria-label="Education Timeline">
+              <h4>Timeline</h4>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h5>IIT (BHU), Varanasi</h5>
+                  <p>Mathematical Sciences, IDD (2022-2027)</p>
+                  <span class="timeline-date">CPI: 9.40</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-marker" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <h5>The Modern School, Lucknow</h5>
+                  <p>CISCE (X) 97.2%, (XII) 92.4%</p>
+                  <span class="timeline-date">2019, 2021</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <aside class="about-stats" aria-label="Stats">
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Featured Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1713</span>
+              <span class="stat-label">Max CF Rating</span>
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header">
-        <h2>Skills</h2>
-        <p>
-          Diverse expertise spanning Web3, AI, classic backend/frontend stacks, and competitive coding.
-        </p>
+    <section id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p>
+            Diverse expertise spanning Web3, AI, classic backend/frontend stacks, and competitive coding.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category" aria-label="Web3 & Blockchain">
+            <h3><i class="fa fa-cube" aria-hidden="true"></i> Web3 & Blockchain</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Solidity</span>
+              <span class="skill-tag">Foundry</span>
+              <span class="skill-tag">Ethereum</span>
+              <span class="skill-tag">Smart Contracts</span>
+              <span class="skill-tag">Chainlink</span>
+              <span class="skill-tag">MetaMask</span>
+              <span class="skill-tag">Web3.js</span>
+              <span class="skill-tag">Ethers.js</span>
+              <span class="skill-tag">Ethereum Testnets</span>
+            </div>
+          </div>
+          <div class="skill-category" aria-label="Web Development">
+            <h3><i class="fa fa-laptop" aria-hidden="true"></i> Web Development</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Bootstrap 5</span>
+              <span class="skill-tag">EJS</span>
+            </div>
+          </div>
+          <div class="skill-category" aria-label="Programming">
+            <h3><i class="fa fa-code" aria-hidden="true"></i> Programming</h3>
+            <div class="skill-items">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category" aria-label="ML & AI Tools">
+            <h3><i class="fa fa-robot" aria-hidden="true"></i> ML & AI Tools</h3>
+            <div class="skill-items">
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-category" aria-label="Version Control">
+            <h3><i class="fa fa-git" aria-hidden="true"></i> Version Control</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fa fa-cube"></i> Web3 & Blockchain</h3>
-          <div class="skill-items">
-            <span class="skill-tag">Solidity</span>
-            <span class="skill-tag">Foundry</span>
-            <span class="skill-tag">Ethereum</span>
-            <span class="skill-tag">Smart Contracts</span>
-            <span class="skill-tag">Chainlink</span>
-            <span class="skill-tag">MetaMask</span>
-            <span class="skill-tag">Web3.js</span>
-            <span class="skill-tag">Ethers.js</span>
-            <span class="skill-tag">Ethereum Testnets</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fa fa-laptop"></i> Web Development</h3>
-          <div class="skill-items">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Bootstrap 5</span>
-            <span class="skill-tag">EJS</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fa fa-code"></i> Programming</h3>
-          <div class="skill-items">
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript (ES6+)</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fa fa-robot"></i> ML & AI Tools</h3>
-          <div class="skill-items">
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">Keras</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Scikit-learn</span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fa fa-git"></i> Version Control</h3>
-          <div class="skill-items">
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p>Web3, fullstack, algorithmic tools, and UX-driven interfaces from my portfolio and GitHub.</p>
+    <section id="projects" class="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>Web3, fullstack, algorithmic tools, and UX-driven interfaces from my portfolio and GitHub.</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Web3 Projects -->
+          <article class="project-card featured" aria-label="FundMe Decentralized App">
+            <div class="project-image"><i class="fa fa-cube" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>FundMe Decentralized App</h3>
+              <p>Blockchain crowdfunding platform with transparent donation and secure withdrawal. MetaMask/Ethereum Testnet integration.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">Solidity</span>
+                  <span class="tech-badge">Foundry</span>
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Ethers.js</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/fundMe" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card featured" aria-label="Decentralized Lottery Smart Contract">
+            <div class="project-image"><i class="fa fa-cube" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Decentralized Lottery Smart Contract</h3>
+              <p>Lottery system with provable randomness (Chainlink VRF), auto-payouts on Ethereum testnet.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">Solidity</span>
+                  <span class="tech-badge">Foundry</span>
+                  <span class="tech-badge">Chainlink</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/Lottery" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <!-- Fullstack & AI -->
+          <article class="project-card" aria-label="Book Notes Management System with AI">
+            <div class="project-image"><i class="fa fa-book" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Book Notes Management System with AI</h3>
+              <p>Multi-user app: authentication, metadata, Google Gemini-powered recommendations. REST CRUD for notes/books, OpenLibrary integration.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Express.js</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">Gemini API</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/book-notes-ai-app" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" aria-label="Movie Search App">
+            <div class="project-image"><i class="fa fa-film" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Movie Search App</h3>
+              <p>App for fast movie discovery across multiple criteria, custom reviews/trailers, slick UI.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/movie_searc_nextjs" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <!-- CS Utilities -->
+          <article class="project-card" aria-label="CPU Scheduler Simulator">
+            <div class="project-image"><i class="fa fa-microchip" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>CPU Scheduler Simulator</h3>
+              <p>Visualization and implementation of classic OS scheduling algorithms (FCFS, SJF, RR, Priority).<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">HTML5</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/cpu_scheduler" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <!-- Classic JS -->
+          <article class="project-card" aria-label="Simon Says Memory Game">
+            <div class="project-image"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Simon Says Memory Game</h3>
+              <p>Progressive levels, sound effects, mobile-friendly. JavaScript & HTML5 UX game.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">HTML5</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/simongame" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" aria-label="Web Drum Kit">
+            <div class="project-image"><i class="fa fa-drum" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Web Drum Kit</h3>
+              <p>Realistic drum sounds, keyboard/mouse control, responsive UI.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">HTML5</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/drumkit" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" aria-label="Image Compression using PCA & Autoencoders">
+            <div class="project-image"><i class="fa fa-image" aria-hidden="true"></i></div>
+            <div class="project-content">
+              <h3>Image Compression using PCA & Autoencoders</h3>
+              <p>Compare neural/autoencoder vs PCA for loss/compression on images.<br>
+                <span class="project-tech-stack">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">TensorFlow</span>
+                  <span class="tech-badge">Keras</span>
+                </span>
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Sanyamjain2105/image-compression" class="project-link" target="_blank" rel="noopener" aria-label="GitHub Repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="projects-grid">
-        <!-- Web3 Projects -->
-        <div class="project-card featured">
-          <div class="project-image"><i class="fa fa-cube"></i></div>
-          <div class="project-content">
-            <h3>FundMe Decentralized App</h3>
-            <p>Blockchain crowdfunding platform with transparent donation and secure withdrawal. MetaMask/Ethereum Testnet integration.<br>Stack: Solidity, Foundry, React, Ethers.js</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/fundMe" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card featured">
-          <div class="project-image"><i class="fa fa-cube"></i></div>
-          <div class="project-content">
-            <h3>Decentralized Lottery Smart Contract</h3>
-            <p>Lottery system with provable randomness (Chainlink VRF), auto-payouts on Ethereum testnet.<br>Stack: Solidity, Foundry, Chainlink</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/Lottery" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- Fullstack & AI -->
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-book"></i></div>
-          <div class="project-content">
-            <h3>Book Notes Management System with AI</h3>
-            <p>Multi-user app: authentication, metadata, Google Gemini-powered recommendations. REST CRUD for notes/books, OpenLibrary integration.<br>Stack: Node.js, Express.js, PostgreSQL, Gemini API</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/book-notes-ai-app" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-film"></i></div>
-          <div class="project-content">
-            <h3>Movie Search App</h3>
-            <p>App for fast movie discovery across multiple criteria, custom reviews/trailers, slick UI.<br>Stack: React, Node.js, MongoDB</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/movie_searc_nextjs" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- CS Utilities -->
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-microchip"></i></div>
-          <div class="project-content">
-            <h3>CPU Scheduler Simulator</h3>
-            <p>Visualization and implementation of classic OS scheduling algorithms (FCFS, SJF, RR, Priority).<br>Stack: JavaScript, HTML5</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/cpu_scheduler" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <!-- Classic JS -->
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-gamepad"></i></div>
-          <div class="project-content">
-            <h3>Simon Says Memory Game</h3>
-            <p>Progressive levels, sound effects, mobile-friendly. JavaScript & HTML5 UX game.</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/simongame" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-drum"></i></div>
-          <div class="project-content">
-            <h3>Web Drum Kit</h3>
-            <p>Realistic drum sounds, keyboard/mouse control, responsive UI.<br>Stack: JS, HTML5</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/drumkit" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image"><i class="fa fa-image"></i></div>
-          <div class="project-content">
-            <h3>Image Compression using PCA & Autoencoders</h3>
-            <p>Compare neural/autoencoder vs PCA for loss/compression on images.<br>Stack: Python, TensorFlow, Keras</p>
-            <div class="project-links">
-              <a href="https://github.com/Sanyamjain2105/image-compression" class="project-link" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- Achievements Section -->
-  <section id="achievements" class="achievements">
-    <div class="container">
-      <div class="section-header">
-        <h2>Achievements & Certifications</h2>
-        <p>Competitive programming, academic awards, certifications, and event leadership.</p>
+    <section id="achievements" class="achievements" aria-label="Achievements & Certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2>Achievements & Certifications</h2>
+          <p>Competitive programming, academic awards, certifications, and event leadership.</p>
+        </div>
+        <div class="achievements-grid">
+          <section class="achievement-category" aria-label="Coding Achievements">
+            <h3><i class="fa fa-trophy" aria-hidden="true"></i> Coding</h3>
+            <div class="achievement-item">
+              <h4>Codeforces Expert</h4>
+              <p>Max Rating: 1713, Global Rank 417</p>
+            </div>
+            <div class="achievement-item">
+              <h4>CodeChef 5-Star</h4>
+              <p>Max Rating: 2004, Global Ranks: 60 (Starter 188), 63 (Starter 165)</p>
+            </div>
+            <div class="achievement-item">
+              <h4>AtCoder 4 Kyu</h4>
+              <p>Max: 1236, Global Rank: 818 (ABC 398)</p>
+            </div>
+          </section>
+          <section class="achievement-category" aria-label="Competitions & Leadership">
+            <h3><i class="fa fa-list" aria-hidden="true"></i> Competitions & Leadership</h3>
+            <div class="achievement-item">
+              <h4>3rd Place, NSSC Case Study (IIT Kharagpur)</h4>
+              <p>Space challenge – national finalist</p>
+            </div>
+            <div class="achievement-item">
+              <h4>Joint Secretary, MACS (IIT BHU)</h4>
+              <p>Led Numerator vs Denominator contest, MACS Sports Week</p>
+            </div>
+            <div class="achievement-item">
+              <h4>Public Relations, FMC Weekend 2024</h4>
+              <p>VIP invitation and POC, communication, event management</p>
+            </div>
+          </section>
+          <section class="achievement-category" aria-label="Certifications">
+            <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Certifications</h3>
+            <div class="achievement-item">
+              <h4>Blockchain Basics – Cyfrin Updraft (2025–26)</h4>
+            </div>
+            <div class="achievement-item">
+              <h4>Solidity Smart Contract Development – Cyfrin Updraft (2025–)</h4>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="achievements-grid">
-        <div class="achievement-category">
-          <h3><i class="fa fa-trophy"></i> Coding</h3>
-          <div class="achievement-item">
-            <h4>Codeforces Expert</h4>
-            <p>Max Rating: 1713, Global Rank 417</p>
-          </div>
-          <div class="achievement-item">
-            <h4>CodeChef 5-Star</h4>
-            <p>Max Rating: 2004, Global Ranks: 60 (Starter 188), 63 (Starter 165)</p>
-          </div>
-          <div class="achievement-item">
-            <h4>AtCoder 4 Kyu</h4>
-            <p>Max: 1236, Global Rank: 818 (ABC 398)</p>
-          </div>
-        </div>
-        <div class="achievement-category">
-          <h3><i class="fa fa-list"></i> Competitions & Leadership</h3>
-          <div class="achievement-item">
-            <h4>3rd Place, NSSC Case Study (IIT Kharagpur)</h4>
-            <p>Space challenge – national finalist</p>
-          </div>
-          <div class="achievement-item">
-            <h4>Joint Secretary, MACS (IIT BHU)</h4>
-            <p>Led Numerator vs Denominator contest, MACS Sports Week</p>
-          </div>
-          <div class="achievement-item">
-            <h4>Public Relations, FMC Weekend 2024</h4>
-            <p>VIP invitation and POC, communication, event management</p>
-          </div>
-        </div>
-        <div class="achievement-category">
-          <h3><i class="fa fa-graduation-cap"></i> Certifications</h3>
-          <div class="achievement-item">
-            <h4>Blockchain Basics – Cyfrin Updraft (2025–26)</h4>
-          </div>
-          <div class="achievement-item">
-            <h4>Solidity Smart Contract Development – Cyfrin Updraft (2025–)</h4>
-          </div>
-        </div>
-        <!-- <div class="achievement-category">
-          <h3><i class="fa fa-briefcase"></i> Experience</h3>
-          <div class="achievement-item">
-            <h4>Goldman Sachs (Upcoming Summer Quantitative Analyst Intern, 2026)</h4>
-            <p>Quantitative modeling, algorithms, performance systems</p>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Contact Me</h2>
-        <p>Let's connect for opportunities in tech, research, and collaboration.</p>
-      </div>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fa fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>sanyamjain353@gmail.com</p>
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Me</h2>
+          <p>Let's connect for opportunities in tech, research, and collaboration.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info" aria-label="Contact Information">
+            <div class="contact-item">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:sanyamjain353@gmail.com" aria-label="Email">sanyamjain353@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+918176971271" aria-label="Phone">+91 8176971271</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Lucknow, Uttar Pradesh, India</p>
+              </div>
             </div>
           </div>
-          <div class="contact-item">
-            <i class="fa fa-phone"></i>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 8176971271</p>
+          <form id="contact-form" class="contact-form" aria-label="Contact Form" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name" aria-required="true">
             </div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-map-marker"></i>
-            <div>
-              <h4>Address</h4>
-              <p>Lucknow, Uttar Pradesh, India</p>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email" aria-required="true">
             </div>
-          </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Your Message" aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" aria-label="Send Message">Send Message</button>
+            <div id="form-success" style="display:none;color:var(--primary-color);margin-top:1rem;font-weight:600;">Thank you! Your message has been sent.</div>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <hr class="section-divider" aria-hidden="true" />
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <span>© 2025 Sanyam Jain</span>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/sanyam-jain-b7965b25a/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Sanyamjain2105" target="_blank">GitHub</a>
-        <a href="resume.pdf" target="_blank">Resume PDF</a>
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer-content">
+  <span>© 2025 Sanyam Jain &mdash; Last updated: September 14, 2025</span>
+        <nav class="footer-links" aria-label="Footer Links">
+          <a href="https://www.linkedin.com/in/sanyam-jain-b7965b25a/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/Sanyamjain2105" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="resume.pdf" target="_blank" aria-label="Resume PDF">Resume PDF</a>
+        </nav>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" style="position:fixed;bottom:32px;right:32px;display:none;background:var(--primary-color);color:#fff;border:none;border-radius:50%;width:48px;height:48px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:1.5rem;z-index:999;cursor:pointer;transition:background 0.2s;">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </main>
 </body>
 </html>

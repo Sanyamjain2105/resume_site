@@ -29,17 +29,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Contact form handling
 const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-    
-    // Simulate form submission (replace with actual form handling)
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Get form data
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        // Simulate form submission (replace with actual form handling)
+        this.reset();
+        const successMsg = document.getElementById('form-success');
+        if (successMsg) {
+            successMsg.style.display = 'block';
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 3500);
+        }
+    });
+}
 
 // Add animation on scroll
 const observerOptions = {
@@ -64,7 +70,7 @@ document.querySelectorAll('.skill-category, .project-card, .achievement-category
     observer.observe(el);
 });
 
-// Navbar background on scroll
+// Navbar background on scroll & Back to Top button
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
@@ -72,7 +78,24 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
     }
+    // Back to Top button
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    }
 });
+
+// Back to Top button click
+const backToTopBtn = document.getElementById('back-to-top');
+if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {

@@ -98,7 +98,82 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+.profile-photo {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    transition: transform 0.3s cubic-bezier(.4,2,.3,1);
+}
+.profile-photo:hover {
+    transform: scale(1.04) rotate(-2deg);
+}
+
+/* Section Divider */
+.section-divider {
+    border: none;
+    border-top: 2px solid var(--border-color);
+    margin: 0 auto 3rem auto;
+    width: 80%;
+    opacity: 0.5;
+}
+
+/* Tech Badges for Projects */
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.tech-badge {
+    background: var(--bg-accent);
+    color: var(--primary-color);
+    padding: 0.3rem 0.9rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 6px rgba(37,99,235,0.07);
+    border: 1px solid var(--border-color);
+    transition: background 0.2s, color 0.2s;
+}
+.tech-badge:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: none;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 1.5rem;
+    z-index: 999;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#back-to-top:hover {
+    background: var(--secondary-color);
+}
+
+/* Contact Form Success Message */
+#form-success {
+    display: none;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+}
 .hero {
     min-height: 100vh;
     display: flex;
@@ -669,6 +744,10 @@ section {
 }
 
 /* Responsive Design */
+.profile-photo {
+    max-width: 100%;
+    height: auto;
+}
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -730,7 +809,20 @@ section {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+    #back-to-top {
+        right: 16px;
+        bottom: 16px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .section-divider {
+        width: 95%;
+    }
+    .project-tech-stack {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
 
 @media (max-width: 480px) {
     .container {
